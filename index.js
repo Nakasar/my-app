@@ -9,7 +9,7 @@ const app = express();
 // Some basic route
 app.get('/', (req, res) => {
   // Send response.
-  res.json({ message: 'coucou moi', title: 'Coucou' });
+  res.json({ message: 'coucou moi', title: 'Coucou', date: new Date().toISOString() });
 });
 
 // Start server.
